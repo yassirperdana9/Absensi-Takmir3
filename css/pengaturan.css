@@ -1,0 +1,167 @@
+/* ==========================================================
+   pengaturan.css
+   Halaman Pengaturan
+   Absensi Shalat Fardhu Takmir
+   Masjid Al-Amin Sidosermo
+   Versi 1.0
+========================================================== */
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.card{
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+.form-group label{
+
+    font-weight:600;
+
+    color:#374151;
+
+    margin-bottom:8px;
+
+}
+
+.form-group input,
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:12px 15px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-family:inherit;
+
+    transition:.3s;
+
+    box-sizing:border-box;
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:90px;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#166534;
+
+    box-shadow:0 0 0 3px rgba(22,101,52,.15);
+
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.button-card{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+}
+
+.btn-save,
+
+.btn-reset{
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:13px 24px;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-save{
+
+    background:#166534;
+
+    color:#fff;
+
+}
+
+.btn-save:hover{
+
+    background:#14532d;
+
+}
+
+.btn-reset{
+
+    background:#ef4444;
+
+    color:#fff;
+
+}
+
+.btn-reset:hover{
+
+    background:#dc2626;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+.button-card{
+
+    flex-direction:column;
+
+}
+
+.btn-save,
+
+.btn-reset{
+
+    width:100%;
+
+}
+
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Admin | Absensi Takmir</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon.png">
+
+</head>
+
+<body>
+
+<!-- ==========================================================
+HEADER
+========================================================== -->
+
+<header class="header">
+
+    <div class="header-content">
+
+        <div class="brand">
+
+            <img src="../assets/logo.png"
+                 class="logo"
+                 alt="Logo">
+
+            <div>
+
+                <h1>Dashboard Admin</h1>
+
+                <p>Masjid Al-Amin Sidosermo</p>
+
+            </div>
+
+        </div>
+
+        <div class="admin-user">
+
+            👤 Admin Takmir
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ==========================================================
+NAVBAR
+========================================================== -->
+
+<nav class="navbar">
+
+    <ul>
+
+        <li><a href="admin.html" class="active">🏠 Dashboard</a></li>
+
+        <li><a href="riwayat.html">📋 Riwayat</a></li>
+
+        <li><a href="rekap.html">📊 Rekap</a></li>
+
+        <li><a href="grafik.html">📈 Grafik</a></li>
+
+        <li><a href="pengaturan.html">⚙ Pengaturan</a></li>
+
+        <li>
+    <a href="#" id="logoutBtn">
+        🚪 Logout
+    </a>
+</li>
+
+    </ul>
+
+</nav>
+
+
+<!-- ==========================================================
+CONTENT
+========================================================== -->
+
+<main class="container">
+
+    <!-- ==========================
+         CARD STATISTIK
+    =========================== -->
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+
+            <h3>Total Takmir</h3>
+
+            <h2 id="totalTakmir">0</h2>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Total Absensi</h3>
+
+            <h2 id="totalAbsensi">0</h2>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Total Shalat</h3>
+
+            <h2 id="totalShalat">0</h2>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================
+         CONTENT GRID
+    =========================== -->
+
+    <section class="content-grid">
+
+        <!-- Ranking -->
+
+        <div class="card">
+
+            <h2>
+
+                🏆 Ranking Takmir
+
+            </h2>
+
+            <table class="ranking-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>No</th>
+
+                        <th>Nama Takmir</th>
+
+                        <th>Total</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="rankingBody">
+
+                    <tr>
+
+                        <td colspan="3">
+
+                            Memuat data...
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- Grafik -->
+
+        <section class="card chart-card">
+
+    <h2>📈 Grafik Kehadiran Takmir</h2>
+
+    <div class="chart-wrapper">
+
+        <canvas id="rankingChart"></canvas>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ==========================================================
+FOOTER
+========================================================== -->
+
+<footer>
+
+    © 2026 Takmir Masjid Al-Amin Sidosermo
+
+</footer>
+
+
+<!-- ==========================================================
+SCRIPT
+========================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+<script src="../js/auth.js"></script>
+
+<script src="../js/api.js"></script>
+
+<script src="../js/admin.js"></script>
+
+</body>
+
+</html>

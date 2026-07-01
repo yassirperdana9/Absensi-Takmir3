@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Absensi Shalat Fardhu Takmir Masjid Al-Amin Sidosermo</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#166534"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/favicon.png" />
+
+  <!-- Font (opsional tapi profesional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-content">
+      <img src="assets/logo.png" class="logo" alt="Logo Masjid">
+      <div>
+        <h1>Absensi Shalat Fardhu</h1>
+        <p>Takmir Masjid Al-Amin Sidosermo</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <div class="card" id="formPage">
+
+      <h2>Form Absensi Takmir</h2>
+      <p class="subtitle">Silakan isi kehadiran shalat harian</p>
+
+      <!-- FORM -->
+      <form id="absensiForm">
+
+        <!-- NAMA -->
+        <div class="form-group">
+          <label>Nama Takmir</label>
+          <select id="nama" required>
+            <option value="">-- Pilih Nama --</option>
+            <option value="Agus Sugiyantoro">Agus Sugiyantoro</option>
+            <option value="Muhammad Ridhani">Muhammad Ridhani</option>
+            <option value="Yassir Perdana Harahap">Yassir Perdana Harahap</option>
+            <option value="Muhammad Wildani">Muhammad Wildani</option>
+            <option value="Fahri Harisuddin Arrozi">Fahri Harisuddin Arrozi</option>
+          </select>
+        </div>
+
+        <!-- TANGGAL -->
+        <div class="form-group">
+          <label>Tanggal</label>
+          <input type="date" id="tanggal" readonly />
+        </div>
+
+        <!-- CHECKLIST SHALAT -->
+        <div class="form-group">
+          <label>Checklist Shalat</label>
+
+          <div class="checklist">
+            <label><input type="checkbox" value="Subuh"> Subuh</label>
+            <label><input type="checkbox" value="Dzuhur"> Dzuhur</label>
+            <label><input type="checkbox" value="Ashar"> Ashar</label>
+            <label><input type="checkbox" value="Maghrib"> Maghrib</label>
+            <label><input type="checkbox" value="Isya"> Isya</label>
+          </div>
+        </div>
+
+        <!-- BUTTON -->
+        <button type="submit" class="btn">
+          Simpan Absensi
+        </button>
+
+        <!-- STATUS -->
+        <p id="status" class="status"></p>
+
+      </form>
+    </div>
+<!-- HALAMAN SUKSES -->
+<div class="card" id="successPage" style="display:none; text-align:center;">
+
+    <img src="assets/logo.png" class="logo" alt="Logo Masjid" style="width:80px;margin-bottom:20px;">
+
+    <h2 style="color:#16a34a;">✅ ABSENSI BERHASIL</h2>
+
+    <p>
+        Terima kasih.<br><br>
+
+        Absensi Shalat Fardhu Anda<br>
+        telah berhasil disimpan.
+    </p>
+
+    <hr style="margin:20px 0;">
+
+    <p>
+        <strong>Nama</strong><br>
+        <span id="successNama"></span>
+    </p>
+
+    <p>
+        <strong>Tanggal</strong><br>
+        <span id="successTanggal"></span>
+    </p>
+
+    <button
+        id="btnSelesai"
+        class="btn"
+        style="margin-top:25px;">
+        Selesai
+    </button>
+
+</div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Takmir Masjid Al-Amin Sidosermo</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

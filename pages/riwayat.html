@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Riwayat Absensi | Dashboard Admin</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <link rel="stylesheet"
+          href="../css/admin.css">
+
+    <link rel="stylesheet"
+          href="../css/riwayat.css">
+
+    <link rel="icon"
+          href="../assets/favicon.png">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-content">
+
+        <div class="brand">
+
+            <img src="../assets/logo.png"
+                 class="logo">
+
+            <div>
+
+                <h1>Riwayat Absensi</h1>
+
+                <p>Masjid Al-Amin Sidosermo</p>
+
+            </div>
+
+        </div>
+
+        <div class="admin-user">
+
+            👤 Admin Takmir
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<nav class="navbar">
+
+    <ul>
+
+        <li>
+
+            <a href="admin.html">
+
+                🏠 Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="riwayat.html"
+               class="active">
+
+                📋 Riwayat
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="rekap.html">
+
+                📊 Rekap
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="grafik.html">
+
+                📈 Grafik
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="pengaturan.html">
+
+                ⚙ Pengaturan
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <li>
+    <a href="#" id="logoutBtn">
+        🚪 Logout
+    </a>
+</li>
+
+    </ul>
+
+</nav>
+
+
+
+<main class="container">
+
+    <section class="card">
+
+        <h2>
+
+            📋 Riwayat Absensi Takmir
+
+        </h2>
+
+        <div class="filter-grid">
+
+            <div>
+
+                <label>
+
+                    Cari Nama
+
+                </label>
+
+                <input
+                    type="text"
+                    id="searchNama"
+                    placeholder="Masukkan nama...">
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    Filter Tanggal
+
+                </label>
+
+                <input
+                    type="date"
+                    id="filterTanggal">
+
+            </div>
+
+            <div class="filter-button">
+
+                <button
+                    id="btnReset"
+                    class="btn">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="card">
+
+        <div class="table-responsive">
+
+            <table class="ranking-table">
+
+                <thead>
+
+                    <tr>
+    <th>No</th>
+    <th>Nama</th>
+    <th>Tanggal</th>
+    <th>Subuh</th>
+    <th>Dzuhur</th>
+    <th>Ashar</th>
+    <th>Maghrib</th>
+    <th>Isya</th>
+    <th>Total</th>
+    
+</tr>
+
+                </thead>
+
+                <tbody id="riwayatBody">
+
+                    <tr>
+
+                        <td colspan="9">
+
+                            Memuat data...
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    <p>
+
+        © 2026 Takmir Masjid Al-Amin Sidosermo
+
+    </p>
+
+</footer>
+
+<script src="../js/auth.js"></script>
+
+<script src="../js/api.js"></script>
+
+<script src="../js/riwayat.js"></script>
+
+</body>
+
+</html>

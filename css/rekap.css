@@ -1,0 +1,246 @@
+/* ==========================================================
+   rekap.css
+   Rekap Absensi Takmir
+   Masjid Al-Amin Sidosermo
+   Versi 1.0
+========================================================== */
+
+
+/* ==========================================================
+   JUDUL CARD
+========================================================== */
+
+.card h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ==========================================================
+   FILTER
+========================================================== */
+
+.filter-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr auto;
+
+    gap:20px;
+
+    align-items:end;
+
+}
+
+.filter-grid label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.filter-grid select{
+
+    width:100%;
+
+    padding:12px 14px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    background:#fff;
+
+    font-size:15px;
+
+    transition:.2s;
+
+}
+
+.filter-grid select:focus{
+
+    outline:none;
+
+    border-color:#166534;
+
+    box-shadow:0 0 0 3px rgba(22,163,74,.15);
+
+}
+
+.filter-button{
+
+    display:flex;
+
+}
+
+.filter-button .btn{
+
+    min-width:170px;
+
+}
+
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+.table-responsive{
+
+    overflow-x:auto;
+
+}
+
+.ranking-table{
+
+    min-width:900px;
+
+}
+
+.ranking-table th{
+
+    white-space:nowrap;
+
+}
+
+.ranking-table td{
+
+    white-space:nowrap;
+
+    text-align:center;
+
+}
+
+.ranking-table td:nth-child(2){
+
+    text-align:left;
+
+    font-weight:600;
+
+}
+
+.ranking-table td:last-child{
+
+    font-weight:bold;
+
+    color:#166534;
+
+}
+
+
+/* ==========================================================
+   EXPORT
+========================================================== */
+
+.action-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.action-grid .btn{
+
+    padding:18px;
+
+    font-size:16px;
+
+    cursor:not-allowed;
+
+    opacity:.75;
+
+}
+
+.action-grid small{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:13px;
+
+    color:#6b7280;
+
+}
+
+
+/* ==========================================================
+   EMPTY DATA
+========================================================== */
+
+.empty-data{
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#6b7280;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+.filter-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.filter-button .btn{
+
+    width:100%;
+
+}
+
+.action-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+    padding:18px;
+
+}
+
+.card h2{
+
+    font-size:20px;
+
+}
+
+.ranking-table th,
+
+.ranking-table td{
+
+    padding:10px;
+
+    font-size:14px;
+
+}
+
+}

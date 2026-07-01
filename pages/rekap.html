@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Rekap Absensi | Dashboard Admin</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/admin.css">
+
+    <link rel="stylesheet" href="../css/rekap.css">
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="../assets/favicon.png">
+
+</head>
+
+<body>
+
+<!-- ==========================================================
+HEADER
+========================================================== -->
+
+<header class="header">
+
+    <div class="header-content">
+
+        <div class="brand">
+
+            <img src="../assets/logo.png"
+                 class="logo"
+                 alt="Logo">
+
+            <div>
+
+                <h1>Rekap Absensi</h1>
+
+                <p>Masjid Al-Amin Sidosermo</p>
+
+            </div>
+
+        </div>
+
+        <div class="admin-user">
+
+            👤 Admin Takmir
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ==========================================================
+NAVBAR
+========================================================== -->
+
+<nav class="navbar">
+
+    <ul>
+
+        <li>
+
+            <a href="admin.html">
+
+                🏠 Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="riwayat.html">
+
+                📋 Riwayat
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="rekap.html"
+               class="active">
+
+                📊 Rekap
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="grafik.html">
+
+                📈 Grafik
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="pengaturan.html">
+
+                ⚙ Pengaturan
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <li>
+    <a href="#" id="logoutBtn">
+        🚪 Logout
+    </a>
+</li>
+
+    </ul>
+
+</nav>
+
+<!-- ==========================================================
+CONTENT
+========================================================== -->
+
+<main class="container">
+
+    <!-- ==========================================
+         FILTER PERIODE
+    =========================================== -->
+
+    <section class="card">
+
+        <h2>
+
+            📅 Pilih Periode Rekap
+
+        </h2>
+
+        <div class="filter-grid">
+
+            <div>
+
+                <label>Bulan</label>
+
+                <select id="bulan">
+
+                    <option value="1">Januari</option>
+                    <option value="2">Februari</option>
+                    <option value="3">Maret</option>
+                    <option value="4">April</option>
+                    <option value="5">Mei</option>
+                    <option value="6">Juni</option>
+                    <option value="7">Juli</option>
+                    <option value="8">Agustus</option>
+                    <option value="9">September</option>
+                    <option value="10">Oktober</option>
+                    <option value="11">November</option>
+                    <option value="12">Desember</option>
+
+                </select>
+
+            </div>
+
+            <div>
+
+                <label>Tahun</label>
+
+                <select id="tahun">
+
+                </select>
+
+            </div>
+
+            <div class="filter-button">
+
+                <button
+                    class="btn"
+                    id="btnTampilkan">
+
+                    Tampilkan
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         TABEL REKAP
+    =========================================== -->
+
+    <section class="card">
+
+        <h2>
+
+            📊 Rekap Kehadiran Takmir
+
+        </h2>
+
+        <div class="table-responsive">
+
+            <table class="ranking-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>No</th>
+
+                        <th>Nama</th>
+
+                        <th>Subuh</th>
+
+                        <th>Dzuhur</th>
+
+                        <th>Ashar</th>
+
+                        <th>Maghrib</th>
+
+                        <th>Isya</th>
+
+                        <th>Total</th>
+
+                        <th>%</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="rekapBody">
+
+                    <tr>
+
+                        <td colspan="9">
+
+                            Pilih periode kemudian klik
+                            <b>Tampilkan</b>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         AKSI
+    =========================================== -->
+
+    <section class="card">
+
+        <h2>
+
+            📄 Export Laporan
+
+        </h2>
+
+        <div class="action-grid">
+
+            <button
+                class="btn"
+                disabled>
+
+                📊 Export Excel
+                <br>
+                <small>Coming Soon</small>
+
+            </button>
+
+            <button
+                class="btn"
+                disabled>
+
+                📄 Export PDF
+                <br>
+                <small>Coming Soon</small>
+
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- ==========================================================
+FOOTER
+========================================================== -->
+
+<footer>
+
+    © 2026 Takmir Masjid Al-Amin Sidosermo
+
+</footer>
+
+<!-- ==========================================================
+SCRIPT
+========================================================== -->
+
+<script src="../js/auth.js"></script>
+
+<script src="../js/api.js"></script>
+
+<script src="../js/rekap.js"></script>
+
+</body>
+
+</html>

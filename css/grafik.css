@@ -1,0 +1,38 @@
+/* ==========================================================
+   grafik.css
+   Halaman Grafik Dashboard
+========================================================== */
+
+/* Card grafik */
+
+.chart-wrapper{
+
+    position: relative;
+
+    width: 100%;
+
+    height: 350px;
+
+    margin-top: 20px;
+
+}
+
+.chart-wrapper canvas{
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .chart-wrapper{
+
+        height:260px;
+
+    }
+
+}

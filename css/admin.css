@@ -1,0 +1,484 @@
+/* ==========================================================
+   admin.css
+   Dashboard Admin
+   Absensi Shalat Fardhu Takmir
+   Masjid Al-Amin Sidosermo
+   Versi 2.0
+========================================================== */
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+
+    margin:0;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    background:#f5f7fa;
+
+    color:#333;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header{
+
+    background:#166534;
+
+    color:#fff;
+
+}
+
+.header-content{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:18px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    padding:5px;
+
+}
+
+.brand h1{
+
+    margin:0;
+
+    font-size:32px;
+
+}
+
+.brand p{
+
+    margin:6px 0 0;
+
+    color:#d1fae5;
+
+}
+
+.admin-user{
+
+    background:rgba(255,255,255,.15);
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+}
+
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+.navbar{
+
+    background:#ffffff;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.navbar ul{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:0;
+
+    list-style:none;
+
+    display:flex;
+
+}
+
+.navbar li{
+
+    flex:1;
+
+}
+
+.navbar a{
+
+    display:block;
+
+    text-align:center;
+
+    padding:16px;
+
+    text-decoration:none;
+
+    color:#374151;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    background:#ecfdf5;
+
+    color:#166534;
+
+}
+
+.navbar a.active{
+
+    background:#166534;
+
+    color:#fff;
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+    max-width:1200px;
+
+    margin:35px auto;
+
+    padding:0 20px;
+
+}
+
+/* ==========================================================
+   STATISTIK
+========================================================== */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.stat-card h3{
+
+    margin:0;
+
+    color:#666;
+
+    font-size:20px;
+
+}
+
+.stat-card h2{
+
+    margin-top:18px;
+
+    font-size:42px;
+
+    color:#166534;
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.content-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    margin-top:0;
+
+    color:#166534;
+
+}
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+.ranking-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.ranking-table th{
+
+    background:#166534;
+
+    color:#fff;
+
+    padding:14px;
+
+}
+
+.ranking-table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.ranking-table tbody tr:nth-child(even){
+
+    background:#f9fafb;
+
+}
+
+.ranking-table tbody tr:hover{
+
+    background:#ecfdf5;
+
+}
+
+.ranking-table td:first-child,
+
+.ranking-table td:last-child{
+
+    text-align:center;
+
+    width:80px;
+
+}
+
+/* ==========================================================
+   COMING SOON
+========================================================== */
+
+.coming-soon{
+
+    height:320px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:#777;
+
+}
+
+.coming-soon h3{
+
+    font-size:28px;
+
+    color:#166534;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    margin-top:40px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#777;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.content-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.header-content{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:15px;
+
+}
+
+.brand{
+
+    flex-direction:column;
+
+}
+
+.navbar ul{
+
+    flex-direction:column;
+
+}
+
+.navbar li{
+
+    width:100%;
+
+}
+
+.brand h1{
+
+    font-size:26px;
+
+}
+
+.stat-card h2{
+
+    font-size:36px;
+
+}
+
+.container{
+
+    padding:0 15px;
+
+}
+
+.card{
+
+    overflow-x:auto;
+
+}
+
+}
+
+/* ==========================================================
+   GRAFIK DASHBOARD
+========================================================== */
+
+.chart-wrapper{
+
+    position: relative;
+
+    width: 100%;
+
+    height: 320px;
+
+    margin-top: 20px;
+
+}
+
+.chart-wrapper canvas{
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE GRAFIK
+========================================================== */
+
+@media (max-width:768px){
+
+    .chart-wrapper{
+
+        height:260px;
+
+    }
+
+}

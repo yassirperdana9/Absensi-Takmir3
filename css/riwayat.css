@@ -1,0 +1,309 @@
+/* ==========================================================
+   riwayat.css
+   Riwayat Absensi Takmir
+   Masjid Al-Amin Sidosermo
+   Versi 1.0
+========================================================== */
+
+
+/* ==========================================================
+   JUDUL HALAMAN
+========================================================== */
+
+.card h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+/* ==========================================================
+   FILTER
+========================================================== */
+
+.filter-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1.2fr auto;
+
+    gap:20px;
+
+    align-items:end;
+
+}
+
+.filter-grid label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.filter-grid input{
+
+    width:100%;
+
+    padding:12px 14px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.25s;
+
+    box-sizing:border-box;
+
+    background:#fff;
+
+}
+
+.filter-grid input:focus{
+
+    outline:none;
+
+    border-color:#16a34a;
+
+    box-shadow:0 0 0 3px rgba(22,163,74,.15);
+
+}
+
+.filter-button{
+
+    display:flex;
+
+    align-items:flex-end;
+
+}
+
+.filter-button .btn{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+.table-responsive{
+
+    overflow-x:auto;
+
+}
+
+.ranking-table{
+
+    width:100%;
+
+    min-width:1100px;
+
+    border-collapse:collapse;
+
+}
+
+.ranking-table thead{
+
+    background:#166534;
+
+    color:#fff;
+
+}
+
+.ranking-table th{
+
+    padding:14px;
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+.ranking-table td{
+
+    padding:13px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.ranking-table tbody tr:nth-child(even){
+
+    background:#f9fafb;
+
+}
+
+.ranking-table tbody tr:hover{
+
+    background:#ecfdf5;
+
+}
+
+.ranking-table td:nth-child(2){
+
+    text-align:left;
+
+    font-weight:600;
+
+}
+
+.ranking-table td:last-child{
+
+    font-weight:bold;
+
+    color:#166534;
+
+}
+
+
+/* ==========================================================
+   STATUS CHECK
+========================================================== */
+
+.check{
+
+    color:#16a34a;
+
+    font-weight:bold;
+
+}
+
+.empty{
+
+    color:#d1d5db;
+
+}
+
+
+/* ==========================================================
+   EMPTY DATA
+========================================================== */
+
+.empty-data{
+
+    text-align:center;
+
+    color:#6b7280;
+
+    padding:40px;
+
+}
+
+
+/* ==========================================================
+   PAGINATION
+========================================================== */
+
+.pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+.pagination button{
+
+    padding:10px 16px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#166534;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.pagination button:hover{
+
+    background:#15803d;
+
+}
+
+.pagination button:disabled{
+
+    background:#d1d5db;
+
+    cursor:not-allowed;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+.filter-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.filter-button{
+
+    display:block;
+
+}
+
+.filter-button .btn{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+    padding:18px;
+
+}
+
+.card h2{
+
+    font-size:20px;
+
+}
+
+.ranking-table th,
+
+.ranking-table td{
+
+    padding:10px;
+
+    font-size:14px;
+
+}
+
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pengaturan | Dashboard Admin</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/pengaturan.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon.png">
+
+</head>
+
+<body>
+
+<!-- ==========================================================
+HEADER
+========================================================== -->
+
+<header class="header">
+
+    <div class="header-content">
+
+        <div class="brand">
+
+            <img src="../assets/logo.png"
+                 class="logo"
+                 alt="Logo">
+
+            <div>
+
+                <h1>Pengaturan Sistem</h1>
+
+                <p>Masjid Al-Amin Sidosermo</p>
+
+            </div>
+
+        </div>
+
+        <div class="admin-user">
+
+            👤 Admin Takmir
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ==========================================================
+NAVBAR
+========================================================== -->
+
+<nav class="navbar">
+
+    <ul>
+
+        <li><a href="admin.html">🏠 Dashboard</a></li>
+
+        <li><a href="riwayat.html">📋 Riwayat</a></li>
+
+        <li><a href="rekap.html">📊 Rekap</a></li>
+
+        <li><a href="grafik.html">📈 Grafik</a></li>
+
+        <li><a href="pengaturan.html" class="active">⚙ Pengaturan</a></li>
+
+        <li>
+            <a href="#" id="logoutBtn">
+                🚪 Logout
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- ==========================================================
+CONTENT
+========================================================== -->
+
+<main class="container">
+
+    <!-- ==========================
+         INFORMASI MASJID
+    =========================== -->
+
+    <section class="card">
+
+        <h2>
+
+            🕌 Informasi Masjid
+
+        </h2>
+
+        <div class="form-group">
+
+            <label>
+
+                Nama Masjid
+
+            </label>
+
+            <input
+                type="text"
+                id="namaMasjid"
+                placeholder="Nama Masjid">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+
+                Alamat
+
+            </label>
+
+            <textarea
+                id="alamatMasjid"
+                rows="3"
+                placeholder="Alamat Masjid"></textarea>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+
+                Tahun Copyright
+
+            </label>
+
+            <input
+                type="number"
+                id="tahunCopyright">
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================
+         AKUN ADMIN
+    =========================== -->
+
+    <section class="card">
+
+        <h2>
+
+            👤 Akun Admin
+
+        </h2>
+
+        <div class="form-group">
+
+            <label>
+
+                Username
+
+            </label>
+
+            <input
+                type="text"
+                id="usernameAdmin">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+
+                Password
+
+            </label>
+
+            <input
+                type="password"
+                id="passwordAdmin">
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================
+         TOMBOL
+    =========================== -->
+
+    <section class="card button-card">
+
+        <button
+            id="btnSimpan"
+            class="btn-save">
+
+            💾 Simpan Pengaturan
+
+        </button>
+
+        <button
+            id="btnReset"
+            class="btn-reset">
+
+            🔄 Reset Pengaturan
+
+        </button>
+
+    </section>
+
+</main>
+
+<!-- ==========================================================
+FOOTER
+========================================================== -->
+
+<footer>
+
+    © 2026 Takmir Masjid Al-Amin Sidosermo
+
+</footer>
+
+<!-- ==========================================================
+SCRIPT
+========================================================== -->
+
+<script src="../js/auth.js"></script>
+
+<script src="../js/pengaturan.js"></script>
+
+</body>
+
+</html>

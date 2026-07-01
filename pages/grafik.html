@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Grafik Absensi | Dashboard Admin</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/grafik.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon.png">
+
+</head>
+
+<body>
+
+<!-- ==========================================================
+HEADER
+========================================================== -->
+
+<header class="header">
+
+    <div class="header-content">
+
+        <div class="brand">
+
+            <img src="../assets/logo.png"
+                 class="logo"
+                 alt="Logo">
+
+            <div>
+
+                <h1>Grafik Absensi</h1>
+
+                <p>Masjid Al-Amin Sidosermo</p>
+
+            </div>
+
+        </div>
+
+        <div class="admin-user">
+
+            👤 Admin Takmir
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ==========================================================
+NAVBAR
+========================================================== -->
+
+<nav class="navbar">
+
+    <ul>
+
+        <li><a href="admin.html">🏠 Dashboard</a></li>
+
+        <li><a href="riwayat.html">📋 Riwayat</a></li>
+
+        <li><a href="rekap.html">📊 Rekap</a></li>
+
+        <li><a href="grafik.html" class="active">📈 Grafik</a></li>
+
+        <li><a href="pengaturan.html">⚙ Pengaturan</a></li>
+
+        <li>
+    <a href="#" id="logoutBtn">
+        🚪 Logout
+    </a>
+</li>
+
+    </ul>
+
+</nav>
+
+<!-- ==========================================================
+CONTENT
+========================================================== -->
+
+<main class="container">
+
+    <!-- ==========================
+         GRAFIK TOP 10
+    =========================== -->
+
+    <section class="card">
+
+        <h2>
+
+            🏆 Top 10 Kehadiran Takmir
+
+        </h2>
+
+        <div class="chart-wrapper">
+
+            <canvas id="rankingChart"></canvas>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         DISTRIBUSI SHALAT
+    =========================== -->
+
+    <section class="card">
+
+        <h2>
+
+            🕌 Distribusi Kehadiran Shalat
+
+        </h2>
+
+        <div class="chart-wrapper">
+
+            <canvas id="shalatChart"></canvas>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         TREN BULANAN
+    =========================== -->
+
+    <section class="card">
+
+        <h2>
+
+            📈 Tren Kehadiran Bulanan
+
+        </h2>
+
+        <div class="chart-wrapper">
+
+            <canvas id="trendChart"></canvas>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- ==========================================================
+FOOTER
+========================================================== -->
+
+<footer>
+
+    © 2026 Takmir Masjid Al-Amin Sidosermo
+
+</footer>
+
+<!-- ==========================================================
+SCRIPT
+========================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+<script src="../js/auth.js"></script>
+
+<script src="../js/api.js"></script>
+
+<script src="../js/grafik.js"></script>
+
+</body>
+
+</html>
